@@ -1,0 +1,17 @@
+# here the solution in python
+
+class Solution(object):
+    def findMedianSortedArrays(self, nums1, nums2):
+        sum2=0.00
+        sum1=0.00
+        for i in range(len(nums1)):
+            sum1= sum1 + nums1[i]
+
+        
+        for j in range(len(nums2)):
+            sum2= sum2 + nums2[j]   
+
+        sum= sum1 + sum2
+        l= len(nums1)+len(nums2)
+        median = sum/l
+        return median
